@@ -6,7 +6,7 @@ const title = document.body.querySelector(".title");
 const tagline = document.body.querySelector(".tagline");
 const desc = document.body.querySelector(".desc");
 
-
+// option 1
 gsap.to(logo,{
     delay:0.2,
     x:20,
@@ -51,5 +51,12 @@ gsap.from([tagline,desc],{
 
 gsap.from(beer, {
     y:-2000,
-    delay:1.8
+    delay:1.8,
 })
+
+// option 2
+
+const TimeLine = gsap.timeline()
+
+TimeLine
+.from(logo,{})
